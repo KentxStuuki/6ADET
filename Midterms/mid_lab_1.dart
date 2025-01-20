@@ -145,13 +145,13 @@ void main() {
     sep.display();
     
     stdout.write("Please input your choice here: ");
-    category = stdin.readLineSync();
+    category = stdin.readLineSync()!;
     sep.display();
     //This while loop prevents the name to be inputed so that the user won't leave it blank
     while (category.isEmpty) {
       print('Field cannot be empty');
       stdout.write("Please input your Choice again: ");
-      category = stdin.readLineSync();
+      category = stdin.readLineSync()!;
       sep.display();
     }
 
@@ -164,24 +164,24 @@ void main() {
       student stud = new student();
       print("Inputing as a Student");
       stdout.write("Please input your Student number: ");
-      stud.studid = int.parse(stdin.readLineSync());
+      stud.studid = int.parse(stdin.readLineSync()!);
 
       stdout.write("Please input your name: ");
-      stud.name = stdin.readLineSync();
+      stud.name = stdin.readLineSync()!;
       //This while loop prevents the student name to be inputed so that the user won't leave it blank
       while (stud.name.isEmpty) {
       print('Field cannot be empty');
       stdout.write("Please input your name: ");
-      stud.name = stdin.readLineSync();
+      stud.name = stdin.readLineSync()!;
       }
 
       stdout.write("Please input your email: ");
-      stud.email = stdin.readLineSync();
+      stud.email = stdin.readLineSync()!;
       //This while loop prevents the student email to be inputed so that the user won't leave it blank
       while (stud.email.isEmpty) {
       print('Field cannot be empty');
       stdout.write("Please input your Email: ");
-      stud.email = stdin.readLineSync();
+      stud.email = stdin.readLineSync()!;
       }
       sep.display();
       //This line assigns the stud behave like personinfo.
@@ -192,24 +192,24 @@ void main() {
       employee emp = new employee();
 
       stdout.write("Please input your Employee number: ");
-      emp.employeeid = int.parse(stdin.readLineSync());
+      emp.employeeid = int.parse(stdin.readLineSync()!);
 
       stdout.write("Please input your name: ");
-      emp.name = stdin.readLineSync();
+      emp.name = stdin.readLineSync()!;
       //This while loop prevents the employee name to be inputed so that the user won't leave it blank
       while (emp.name.isEmpty) {
       print('Field cannot be empty');
       stdout.write("Please input your name: ");
-      emp.name = stdin.readLineSync();
+      emp.name = stdin.readLineSync()!;
       }
 
       stdout.write("Please input your email: ");
-      emp.email = stdin.readLineSync();
+      emp.email = stdin.readLineSync()!;
       //This while loop prevents the Employee email to be inputed so that the user won't leave it blank
       while (emp.email.isEmpty) {
       print('Field cannot be empty');
       stdout.write("Please input your Email: ");
-      emp.email = stdin.readLineSync();
+      emp.email = stdin.readLineSync()!;
       }
       sep.display();
       //This line assigns the emp behave like personinfo.
@@ -232,21 +232,21 @@ void main() {
 
     while (true) {
       stdout.write("Enter your email: ");
-      emailInput = stdin.readLineSync();
+      emailInput = stdin.readLineSync()!;
       //This while loop prevents the email to be inputed so that the user won't leave it blank
       while (emailInput.isEmpty) {
       print('Field cannot be empty');
       stdout.write("Please input your Email: ");
-      emailInput = stdin.readLineSync();
+      emailInput = stdin.readLineSync()!;
       }
 
       stdout.write("Enter your temporary password: ");
-      passwordInput = stdin.readLineSync();
+      passwordInput = stdin.readLineSync()!;
       //This while loop prevents the password to be inputed so that the user won't leave it blank
       while (passwordInput.isEmpty) {
       print('Field cannot be empty');
       stdout.write("Please input temporary password: ");
-      passwordInput = stdin.readLineSync();
+      passwordInput = stdin.readLineSync()!;
       }
       sep.display();
       load.display();
@@ -266,12 +266,12 @@ void main() {
     sep.display();
     print("Please change your password.");
     stdout.write("Enter your new password: ");
-    newpass = stdin.readLineSync();
+    newpass = stdin.readLineSync()!;
     //This while loop prevents the new password to be inputed so that the user won't leave it blank
     while (newpass.isEmpty) {
       print('Field cannot be empty');
       stdout.write("Please input new password: ");
-      newpass = stdin.readLineSync();
+      newpass = stdin.readLineSync()!;
       }
     //This is the final part of the code where the code displays all of the inputed value, stud/emp id, name, email, and password.
     print("Password changed successfully.");
